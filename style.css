@@ -20,3 +20,14 @@ nav {
     margin-top: 10px;
     padding: 5px;
 }
+main {
+    background-image: url(./pexels-veeterzy-303383.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-right: 0;
+    
+    height: 700px;
+    margin-top: 20px;
+}
