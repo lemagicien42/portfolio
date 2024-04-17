@@ -1,0 +1,31 @@
+@import "header";
+@import "footer";
+@import "haupt";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$color-one :gray;
+$color-second :goldenrod;
+$color-third :gold;
+body {
+  background-image: url(./image/binary-5744621_960_720.webp);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+ 
+ 
+
+}

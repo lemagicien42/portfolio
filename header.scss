@@ -1,0 +1,15 @@
+@import "main";
+.top {
+    background-color: $color-one;
+  }
+  h1 {
+    box-shadow: 5px 5px 10px $color-second;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 10px $color-third;
+    padding: 5px;
+  }
+  .nav-leiste {
+    display: flex;
+    justify-content: space-around;
+  }

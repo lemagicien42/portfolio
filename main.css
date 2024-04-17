@@ -1,0 +1,53 @@
+.top {
+  background-color: gray;
+}
+
+h1 {
+  box-shadow: 5px 5px 10px goldenrod;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 10px gold;
+  padding: 5px;
+}
+
+.nav-leiste {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  height: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./image/binary-5744621_960_720.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+body main .first {
+  width: 250px;
+  height: 350px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+body main .second {
+  width: 250px;
+  height: 350px;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
