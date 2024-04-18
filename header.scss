@@ -1,27 +1,31 @@
-.top {
-  width: 100vw;
-  height: 10vh;
+header {
+display: flex;
+background-color:$color-one ;
+justify-content: space-between;
 
-  background: $color-one;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(242, 239, 239, 0.3);
+background: $color-one;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(242, 239, 239, 0.3);
+
 }
 h1 {
-  box-shadow: 5px 5px 10px $color-second;
-  margin-bottom: 10px;
-  color: rgb(23, 23, 22);
-  text-shadow: 5px 5px 10px $color-third;
-  padding: 5px;
-  font-family: Romanesco;
+  padding-left: 20px;
   font-style: italic;
   font-weight: 400;
   font-size: 40px;
+  text-shadow: 5px 5px 10px gray;
 }
-nav-leiste {
-  background-color: #333;
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: gray;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
 }
 
 ul {
@@ -31,13 +35,21 @@ ul {
 }
 
 a {
-  display: block;
-  color: rgb(23, 23, 22);
-  padding: 10px 20px; 
-  text-decoration: none; 
+  text-decoration: none;
+}
+a:hover {
+  background-color: antiquewhite;
 }
 
-a:hover {
-  
-  transform: scale(1.2);
+.search-form {
+  padding-top: 30px;
+padding-right:5px;
+
+}
+button {
+  border-color: blue;
+  border-radius: 5px;
+}
+placeholder {
+  border-color: blue($color: #000000);
 }
