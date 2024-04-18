@@ -1,19 +1,35 @@
 main {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    .first {
-      width: 250px;
-      height: 350px;
-      border: 3px solid white;
-      border-radius: 5px;
-    }
-
-    .second {
-      width: 250px;
-      height: 350px;
-      
-      border-radius: 5px;
-    
-    }
+  height: 80vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  .first {
+    width: 250px;
+    height: 350px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+    animation: changeShape 2s forwards; 
+    transition: transform 2s ease; 
   }
+  .first:hover{
+    transform: skewX(-30deg); 
+  }
+
+  h2 {
+    width: 500px;
+    height: 300px;
+    font-size: 160px;
+    font-style: italic;
+    font-weight: 400;
+
+    font-family: Romanesco;
+  }
+  .second {
+    width: 250px;
+    height: 350px;
+    border: 3px solid white;
+    border-radius: 5px;
+  }
+}

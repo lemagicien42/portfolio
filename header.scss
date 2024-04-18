@@ -1,15 +1,44 @@
-@import "main";
 .top {
-    background-color: $color-one;
-  }
-  h1 {
-    box-shadow: 5px 5px 10px $color-second;
-    margin-bottom: 10px;
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 10px $color-third;
-    padding: 5px;
-  }
-  .nav-leiste {
-    display: flex;
-    justify-content: space-around;
-  }
+  width: 100vw;
+  height: 10vh;
+
+  background: $color-one;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(242, 239, 239, 0.3);
+}
+h1 {
+  box-shadow: 5px 5px 10px $color-second;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 10px $color-third;
+  padding: 5px;
+  font-family: Romanesco;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+}
+nav-leiste {
+  background-color: #333; /* Hintergrundfarbe der Navigationsleiste */
+}
+
+ul {
+  list-style-type: none; /* Entferne die Standardliste Punkte */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a {
+  display: block;
+  color: white; /* Textfarbe der Links */
+  padding: 10px 20px; /* Innenabstand der Links */
+  text-decoration: none; /* Entferne die Unterstreichung der Links */
+}
+
+a:hover {
+  background-color: #555; /* Hintergrundfarbe der Links beim Überfahren */
+}

@@ -1,4 +1,14 @@
 footer {
-    height: 70px;
-    
+  height: 10vh;
+  width: 100vw;
+  background-color: $color-one;
+  display: flex;
+  justify-content: center;
+
+
+  i{
+    font-size: 30px;
+    margin-top: 10px;
+    color: black;
   }
+}
