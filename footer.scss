@@ -8,7 +8,12 @@ footer {
 
   i{
     font-size: 30px;
-    margin-top: 10px;
+    margin-bottom: 0;
     color: black;
+    position: relative;
+    padding-top: 20px;
+  }
+  .fa-facebook{
+    color: blue;
   }
 }

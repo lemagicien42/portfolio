@@ -5,21 +5,28 @@ main {
   justify-content: space-around;
   .first {
     width: 250px;
-    height: 350px;
-    border: 3px solid white;
+    height: 700px;
+    border: 3px solid rgb(119, 1, 1);
     border-radius: 15px;
     background: #e0e0e0;
     box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
-    animation: changeShape 2s forwards; 
-    transition: transform 2s ease; 
-  }
-  .first:hover{
-    transform: skewX(-30deg); 
-  }
+    animation: move;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
 
+    animation-direction: alternate;
+  }
+  @keyframes move {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translatex(550px);
+    }
+  }
   h2 {
     width: 500px;
-    height: 300px;
+    height: 700px;
     font-size: 160px;
     font-style: italic;
     font-weight: 400;
@@ -28,8 +35,23 @@ main {
   }
   .second {
     width: 250px;
-    height: 350px;
-    border: 3px solid white;
-    border-radius: 5px;
+    height: 700px;
+    border: 3px solid rgb(119, 1, 1);
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+    animation: move-2;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+
+    animation-direction: alternate;
+  }
+  @keyframes move-2 {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translatex(-550px);
+    }
   }
 }
