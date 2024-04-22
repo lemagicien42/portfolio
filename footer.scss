@@ -4,6 +4,9 @@ footer {
   background-color: $color-one;
   display: flex;
   justify-content: center;
+position: fixed;
+bottom: 0;
+
 
   i {
     font-size: 30px;

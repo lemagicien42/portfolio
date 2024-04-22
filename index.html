@@ -20,51 +20,87 @@
             <input type="text" name="search" placeholder="Suche...">
             <button type="submit">Suchen</button>
         </form>
-        
 
 
-        
+
+
 
 
     </header>
     <main>
-        <nav class="nav-leiste">
-            <ul class="nav-links">
-                <li><a href="#" class="nav-link">About me</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="first"><h3>Programiersprachen</h3>
+        <section class="up">
+            <nav class="nav-leiste">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About me</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="first">
+                <h3>Programiersprachen</h3>
 
-            <div class="buble1">
-                Html
-            </div>
-            <div class="buble2">
-                Css
-            </div>
-            <div class="buble1">
-                Html
-            </div>
-            <div class="buble2">
-                Css
-            </div>
+                <div class="buble1">
+                    Html
+                </div>
+                <div class="buble2">
+                    Css
+                </div>
+                <div class="buble1">
+                    Html
+                </div>
+                <div class="buble2">
+                    Css
+                </div>
 
-        </div>
-        <div>
-            <H2>Welcome <br>
-                to the
-                World of
-                Inovation</H2>
-        </div>
-        <div class="second">
-            <h3>Projekte</h3>
-            <div class="future">
-                Coming soon
             </div>
+            <div class="motto">
+                <H2>Welcome <br>
+                    to the
+                    World of
+                    Inovation</H2>
+            </div>
+            <div class="second">
+                <h3>Projekte</h3>
+                <div class="future">
+                    Coming soon
+                </div>
 
-        </div>
+            </div>
+        </section>
+        <section class="down">
+
+            <div id="about">
+                <h3 class="name">Tarik Knouzi</h3>
+
+                <p>Hello guys, my name is Tarik Knouzi, and I'm from Cologne. Currently, I'm in training at DCI to
+                    become a web developer. I would appreciate your support.
+                </p>
+
+
+            </div>
+        </section>
+        <section class="formular">
+            <form id="contact" action="#" method="post">
+                <div>
+                    <label for="name" class="required">Your Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Please enter your name" required minlength="5">
+                </div>
+                <div>
+                    <label for="g-email" class="required">Your e-mail:</label>
+                    <br>
+                    <input type="email" id="g-email" name="g-email" placeholder="Your e-mail" required>
+                </div>
+                <div>
+                    <label for="nachricht" class="required">Please enter your message:</label>
+                    <br>
+                    <textarea id="nachricht" name="nachricht" placeholder="Please Write here" minlength="5"
+                        required></textarea>
+                </div>
+                <button type="submit">Senden</button>
+        </section>
+
     </main>
-    <footer>
+    <footer class="feet">
 
         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
