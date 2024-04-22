@@ -65,6 +65,9 @@ a:hover {
 button {
   border-color: blue;
   border-radius: 5px;
+  background: linear-gradient(to right, #373b3a, #e307f7);
+  color: #fff;
+  height: 20px;
 }
 
 footer {
@@ -125,8 +128,9 @@ main h2 {
   height: 700px;
   font-size: 160px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Romanesco;
+  text-shadow: 5px 5px 10px gray;
 }
 
 .second {
@@ -163,6 +167,7 @@ main h2 {
   animation-duration: 3s;
   animation-iteration-count: 3;
   animation-direction: alternate;
+  background: linear-gradient(to right, #373b3a, #f7073b);
 }
 
 @keyframes move3 {
@@ -189,6 +194,7 @@ main h2 {
   animation-duration: 3s;
   animation-iteration-count: 3;
   animation-direction: alternate;
+  background: linear-gradient(to right, #373b3a, #e307f7);
 }
 
 .future {

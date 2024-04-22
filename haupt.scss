@@ -39,9 +39,10 @@ main {
     height: 700px;
     font-size: 160px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
 
     font-family: Romanesco;
+    text-shadow: 5px 5px 10px gray;
   }
 }
 .second {
@@ -80,6 +81,7 @@ main {
   animation-iteration-count: 3;
 
   animation-direction: alternate;
+  background: linear-gradient(to right, #373b3a, #f7073b);
 }
 @keyframes move3 {
   100% {
@@ -107,6 +109,7 @@ main {
   animation-iteration-count: 3;
 
   animation-direction: alternate;
+  background: linear-gradient(to right, #373b3a, #e307f7);
 }
 
 .future {
@@ -145,7 +148,6 @@ main {
   text-align: center;
   height: 300px;
   border-radius: 15px;
-
 }
 input,
 textarea,
@@ -162,6 +164,7 @@ textarea {
 }
 h3.name {
   padding-bottom: 40px;
+
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
