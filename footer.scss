@@ -1,13 +1,11 @@
 footer {
-  height: 80pxpx;
+  height: 80px;
   width: 100vw;
   background-color: $color-one;
   display: flex;
   justify-content: center;
-position: fixed;
-bottom: 0;
-
-
+  position: fixed;
+  bottom: 0;
 
   i {
     font-size: 30px;
