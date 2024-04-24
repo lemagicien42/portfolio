@@ -43,11 +43,13 @@ h1 {
 
 .nav-links {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   background-color: gray;
-  height: 100%;
+  width: 220px;
+  height: 50px;
   border-radius: 0px 10px 10px 0px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 ul {
@@ -117,12 +119,14 @@ main .nav-link {
   color: rgba(13, 69, 223, 0.6352941176);
 }
 main .first {
-  width: 250px;
+  width: 220px;
   height: 700px;
   border: 3px solid rgb(119, 1, 1);
   border-radius: 15px;
   background: #e0e0e0;
   box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 @keyframes move {
   100% {
@@ -150,12 +154,13 @@ main h2 {
 }
 
 .second {
-  width: 250px;
+  width: 220px;
   height: 700px;
   border: 3px solid rgb(119, 1, 1);
   border-radius: 15px;
   background: #e0e0e0;
   box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+  overflow: hidden;
 }
 
 @keyframes move-2 {
@@ -182,6 +187,11 @@ main h2 {
   border: 2px solid red;
   border-radius: 50%;
   background: linear-gradient(to right, #373b3a, #f7073b);
+  transition: all 3s s;
+  animation: move3;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
 }
 
 @keyframes move3 {
@@ -204,6 +214,11 @@ main h2 {
   border: 2px solid red;
   border-radius: 50%;
   background: linear-gradient(to right, #373b3a, #e307f7);
+  transition: all 3s s;
+  animation: move3;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
 }
 
 .future {
@@ -217,6 +232,11 @@ main h2 {
   border: 2px solid red;
   border-radius: 60%;
   background: linear-gradient(to right, #373b3a, #e307f7);
+  margin-top: 250px;
+  animation: move4;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
 }
 
 .down {
@@ -232,7 +252,7 @@ main h2 {
   padding-right: 15px;
   margin-bottom: 50px;
   border: 2px solid gray;
-  width: 400px;
+  width: 350px;
   text-align: center;
   height: 250px;
   border-radius: 15px;
@@ -244,7 +264,7 @@ main h2 {
   margin-right: auto;
   padding-top: 20px;
   border: 2px solid gray;
-  width: 400px;
+  width: 350px;
   text-align: center;
   height: 300px;
   border-radius: 15px;
@@ -295,6 +315,13 @@ label.required::before {
   }
 }
 @media (min-width: 700px) {
+  main .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 700px;
+    border-radius: 0px 10px 10px 0px;
+  }
   main .up {
     flex-direction: row;
     justify-content: space-between;
@@ -305,13 +332,13 @@ label.required::before {
     animation-iteration-count: 3;
     animation-direction: alternate;
     overflow: hidden;
+    margin-bottom: -20px;
   }
   main .second {
     animation: move-2;
     animation-duration: 3s;
     animation-iteration-count: 3;
     animation-direction: alternate;
-    overflow: hidden;
   }
   main .buble1 {
     transition: all 3s s;
