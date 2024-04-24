@@ -25,7 +25,7 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(242, 239, 239, 0.3);
+  border: 1px solid rgba(194, 93, 93, 0.3);
   position: fixed;
   top: 0;
   left: 0;
@@ -105,7 +105,8 @@ main {
 }
 main .up {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   font-family: Jacquard 12 Charted, sans-serif;
   font-weight: 600;
   padding-left: 10px;
@@ -122,18 +123,13 @@ main .first {
   border-radius: 15px;
   background: #e0e0e0;
   box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
-  animation: move;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  overflow: hidden;
 }
 @keyframes move {
   100% {
     transform: translateX(0);
   }
   0% {
-    transform: translatex(530px);
+    transform: translatex(515px);
   }
 }
 main h3 {
@@ -160,11 +156,6 @@ main h2 {
   border-radius: 15px;
   background: #e0e0e0;
   box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
-  animation: move-2;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  overflow: hidden;
 }
 
 @keyframes move-2 {
@@ -172,7 +163,7 @@ main h2 {
     transform: translateX(0);
   }
   0% {
-    transform: translatex(-530px);
+    transform: translatex(-515px);
   }
 }
 .buble {
@@ -190,11 +181,6 @@ main h2 {
   height: 100px;
   border: 2px solid red;
   border-radius: 50%;
-  transition: all 3s s;
-  animation: move3;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
   background: linear-gradient(to right, #373b3a, #f7073b);
 }
 
@@ -217,11 +203,6 @@ main h2 {
   height: 100px;
   border: 2px solid red;
   border-radius: 50%;
-  transition: all 3s s;
-  animation: move3;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
   background: linear-gradient(to right, #373b3a, #e307f7);
 }
 
@@ -231,11 +212,6 @@ main h2 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250px;
-  animation: move4;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
   width: 100px;
   height: 100px;
   border: 2px solid red;
@@ -256,7 +232,7 @@ main h2 {
   padding-right: 15px;
   margin-bottom: 50px;
   border: 2px solid gray;
-  width: 700px;
+  width: 400px;
   text-align: center;
   height: 250px;
   border-radius: 15px;
@@ -268,7 +244,7 @@ main h2 {
   margin-right: auto;
   padding-top: 20px;
   border: 2px solid gray;
-  width: 700px;
+  width: 400px;
   text-align: center;
   height: 300px;
   border-radius: 15px;
@@ -318,8 +294,58 @@ label.required::before {
     transform: rotate(0deg);
   }
 }
+@media (min-width: 700px) {
+  main .up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .first {
+    animation: move;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    overflow: hidden;
+  }
+  main .second {
+    animation: move-2;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    overflow: hidden;
+  }
+  main .buble1 {
+    transition: all 3s s;
+    animation: move3;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  main .buble2 {
+    transition: all 3s s;
+    animation: move3;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  main .future {
+    margin-top: 250px;
+    animation: move4;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  main #contact {
+    width: 700px;
+  }
+  main #about {
+    width: 700px;
+  }
+}
 @media (max-width: 700px) {
-  .motto {
+  .search-form {
+    display: none;
+  }
+  h2 {
     display: none;
   }
 }
