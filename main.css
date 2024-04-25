@@ -252,7 +252,7 @@ main h2 {
   padding-right: 15px;
   margin-bottom: 50px;
   border: 2px solid gray;
-  width: 350px;
+  width: 270px;
   text-align: center;
   height: 250px;
   border-radius: 15px;
@@ -264,7 +264,7 @@ main h2 {
   margin-right: auto;
   padding-top: 20px;
   border: 2px solid gray;
-  width: 350px;
+  width: 270px;
   text-align: center;
   height: 300px;
   border-radius: 15px;
@@ -332,7 +332,7 @@ label.required::before {
     animation-iteration-count: 3;
     animation-direction: alternate;
     overflow: hidden;
-    margin-bottom: -20px;
+    margin-bottom: -5px;
   }
   main .second {
     animation: move-2;
